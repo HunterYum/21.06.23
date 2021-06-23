@@ -1,6 +1,8 @@
-#keyword값
-def profile(name, age, main_lang):
-   print(name, age, main_lang)
+def profile(name, age, *language):
+   print("이름 : {0}\t나이 : {1}\t".format(name, age), end=" ")
+   for lang in language:
+       print(lang, end=" ")
 
-profile(name="A", main_lang="파이썬", age=20)
-profile(main_lang="자바", age=23, name="B" )
+
+profile("A", 20, "python", "java", "c", "c++", "c#")
+profile("B", 23, "kotlin", "swift", "", "", "")
