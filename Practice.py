@@ -1,22 +1,10 @@
-#커피 대기
-customer = "A"
-index = 5
-while index >=1:
-    print("{0}, 커피가 준비 됐습니다. {1}번 남았습니다.".format(customer, index))
-    index -= 1
-    if index == 0:
-        print("커피 보류")
-
-#무한반복
-# index = 1
-# while True:
-#      print("{0}, 커피가 준비 됐습니다. {1}번 남았습니다.".format(customer, index))
-#      index += 1
-
-#whlie문 탈출예제
-customer = "A"
-person = "unknown"
-
-while person != customer :
-     print("{0}, 커피가 준비 됐습니다.".format(customer))
-     person = input("이름이")
+#continue와 break
+absent = [2,5]
+no_book = [7]
+for student in range(1, 11):
+    if student in absent:
+        continue
+    elif student in no_book:
+        print("수업 안함. {0}은 교무실로".format(student))
+        break
+    print("{0}, 책을 읽어봐".format(student))
