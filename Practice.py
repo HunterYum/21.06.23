@@ -1,15 +1,6 @@
-# def profile(name, age, main_lang):
-#     print("이름 : {0}\t주 사용 언어 : {2}"\
-#         .format(name, age, main_lang))
+#keyword값
+def profile(name, age, main_lang):
+   print(name, age, main_lang)
 
-# profile("A", 20, "파이썬")
-# profile("B", 23, "자바")
-
-#기본값 사용하기
-
-def profile(name, age = 17, main_lang = "파이썬"):
-    print("이름 : {0}\t주 사용 언어 : {2}"\
-        .format(name, age, main_lang))
-
-profile("A")
-profile("B")
+profile(name="A", main_lang="파이썬", age=20)
+profile(main_lang="자바", age=23, name="B" )
