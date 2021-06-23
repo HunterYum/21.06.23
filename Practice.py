@@ -1,8 +1,10 @@
-#날씨
-weather = input("오늘 날씨(비, 눈, 미세먼지 등) : ")
-if weather == "비" or "눈":
-    print("우산 챙길 것")
-elif weather == "미세먼지" :
-    print("마스크 챙길 것")
-else :
-    print("그냥 갈 것")
+#온도
+temp = int(input("기온 : "))
+if 30<= temp:
+    print("너무 더움")
+elif 10 <= temp and temp < 30:
+    print("괜찮음")
+elif 0 <= temp and temp <10:
+    print("추움")
+else:
+    print("너무 추움")
