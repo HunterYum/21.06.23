@@ -1,10 +1,14 @@
-#continue와 break
-absent = [2,5]
-no_book = [7]
-for student in range(1, 11):
-    if student in absent:
-        continue
-    elif student in no_book:
-        print("수업 안함. {0}은 교무실로".format(student))
-        break
-    print("{0}, 책을 읽어봐".format(student))
+#숫자값에 더하기
+student = [1,2,3,4,5]
+print(student)
+student = [i+100 for i in student]
+print(student)
+
+#문자를 길이로 변환
+students = ["Apple", "Banana", "Cross"]
+students = [len(i) for i in students]
+print(students)
+
+#문자를 대문자로 변환
+students = [i.upper() for i in students]
+print(students)
