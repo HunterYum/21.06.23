@@ -1,12 +1,23 @@
-#나도코딩 Chapter7 Quize
+#파일 만들기
+# score_file = open("score.tex", "w", encoding="utf8")
+# print("math : 0", file=score_file)
+# print("en : 50", file=score_file)
+# score_file.close()
 
-def std_weight(height, gender): 
-    if gender == "남자":
-        return height * height * 22
-    else:
-        return height * height * 21
+# score_file = open("score.tex", "a", encoding="utf8")
+# score_file.write("sci : 88")
+# score_file.write("\nco : 100")
 
-height = 175
-gender = "남자"
-weight = round(std_weight(height / 100, gender), 2)
-print("키 {0} {1}의 표준 체중은 {2}kg 입니다.".format(height, gender, weight))
+# #파일 읽기
+# score_file = open("score.tex", "r", encoding="utf8")
+# print(score_file.read())
+# score_file.close()
+
+#파일 글 하나씩 읽기
+score_file = open("score.tex", "r", encoding="utf8")
+print(score_file.readline(), end="")
+print(score_file.readline(), end="")
+print(score_file.readline(), end="")
+print(score_file.readline(), end="")
+score_file.close()
+
