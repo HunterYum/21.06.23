@@ -1,10 +1,9 @@
-#온도
-temp = int(input("기온 : "))
-if 30<= temp:
-    print("너무 더움")
-elif 10 <= temp and temp < 30:
-    print("괜찮음")
-elif 0 <= temp and temp <10:
-    print("추움")
-else:
-    print("너무 추움")
+#대기번호
+
+#방법1
+for waiting_num in [0, 1, 2, 3, 4]:
+     print("대기번호 {0}".format(waiting_num))
+
+#방법2
+for waiting_num in range(1, 6): #1~5
+    print("대기번호 {0}".format(waiting_num))
